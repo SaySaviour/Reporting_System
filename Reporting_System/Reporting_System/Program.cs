@@ -16,7 +16,7 @@ namespace Reporting_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KullaniciGirisForm());
+            Application.Run(new SifreUnutForm());
         }
     }
 }
