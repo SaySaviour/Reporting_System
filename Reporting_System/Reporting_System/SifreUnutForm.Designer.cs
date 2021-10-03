@@ -41,6 +41,7 @@
             // kadi_TxtBx
             // 
             this.kadi_TxtBx.Location = new System.Drawing.Point(127, 104);
+            this.kadi_TxtBx.MaxLength = 20;
             this.kadi_TxtBx.Name = "kadi_TxtBx";
             this.kadi_TxtBx.Size = new System.Drawing.Size(123, 27);
             this.kadi_TxtBx.TabIndex = 0;
@@ -63,6 +64,7 @@
             // sifre_TxtBx
             // 
             this.sifre_TxtBx.Location = new System.Drawing.Point(127, 146);
+            this.sifre_TxtBx.MaxLength = 16;
             this.sifre_TxtBx.Name = "sifre_TxtBx";
             this.sifre_TxtBx.Size = new System.Drawing.Size(123, 27);
             this.sifre_TxtBx.TabIndex = 0;
@@ -85,6 +87,7 @@
             // sifreO_TxtBx
             // 
             this.sifreO_TxtBx.Location = new System.Drawing.Point(127, 191);
+            this.sifreO_TxtBx.MaxLength = 16;
             this.sifreO_TxtBx.Name = "sifreO_TxtBx";
             this.sifreO_TxtBx.Size = new System.Drawing.Size(123, 27);
             this.sifreO_TxtBx.TabIndex = 0;

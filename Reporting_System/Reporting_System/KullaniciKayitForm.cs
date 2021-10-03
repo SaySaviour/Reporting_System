@@ -34,5 +34,10 @@ namespace Reporting_System
             this.Hide();
             frm.Show();
         }
+
+        private void kID_TxtBx_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
     }
 }

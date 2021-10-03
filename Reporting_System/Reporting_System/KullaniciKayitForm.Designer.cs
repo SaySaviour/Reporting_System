@@ -127,6 +127,7 @@
             // 
             this.kadi_TxtBx.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kadi_TxtBx.Location = new System.Drawing.Point(146, 173);
+            this.kadi_TxtBx.MaxLength = 20;
             this.kadi_TxtBx.Name = "kadi_TxtBx";
             this.kadi_TxtBx.Size = new System.Drawing.Size(135, 27);
             this.kadi_TxtBx.TabIndex = 4;
@@ -135,6 +136,7 @@
             // 
             this.sifre_TxtBx.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sifre_TxtBx.Location = new System.Drawing.Point(146, 226);
+            this.sifre_TxtBx.MaxLength = 16;
             this.sifre_TxtBx.Name = "sifre_TxtBx";
             this.sifre_TxtBx.Size = new System.Drawing.Size(135, 27);
             this.sifre_TxtBx.TabIndex = 4;
@@ -159,9 +161,11 @@
             // 
             this.kID_TxtBx.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kID_TxtBx.Location = new System.Drawing.Point(146, 125);
+            this.kID_TxtBx.MaxLength = 3;
             this.kID_TxtBx.Name = "kID_TxtBx";
             this.kID_TxtBx.Size = new System.Drawing.Size(135, 27);
             this.kID_TxtBx.TabIndex = 4;
+            this.kID_TxtBx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kID_TxtBx_KeyPress);
             // 
             // cikBttn
             // 

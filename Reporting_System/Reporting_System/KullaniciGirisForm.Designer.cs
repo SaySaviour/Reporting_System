@@ -42,7 +42,7 @@
             // Sifre_TextBox
             // 
             this.Sifre_TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Sifre_TextBox.Location = new System.Drawing.Point(116, 140);
+            this.Sifre_TextBox.Location = new System.Drawing.Point(119, 130);
             this.Sifre_TextBox.MaxLength = 16;
             this.Sifre_TextBox.Name = "Sifre_TextBox";
             this.Sifre_TextBox.Size = new System.Drawing.Size(149, 27);
@@ -51,8 +51,8 @@
             // K_Adi_TextBox
             // 
             this.K_Adi_TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.K_Adi_TextBox.Location = new System.Drawing.Point(116, 98);
-            this.K_Adi_TextBox.MaxLength = 30;
+            this.K_Adi_TextBox.Location = new System.Drawing.Point(119, 88);
+            this.K_Adi_TextBox.MaxLength = 20;
             this.K_Adi_TextBox.Name = "K_Adi_TextBox";
             this.K_Adi_TextBox.Size = new System.Drawing.Size(149, 27);
             this.K_Adi_TextBox.TabIndex = 1;
@@ -62,7 +62,7 @@
             this.K_Adi_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.K_Adi_Label.AutoSize = true;
             this.K_Adi_Label.ForeColor = System.Drawing.Color.Maroon;
-            this.K_Adi_Label.Location = new System.Drawing.Point(2, 101);
+            this.K_Adi_Label.Location = new System.Drawing.Point(5, 91);
             this.K_Adi_Label.Name = "K_Adi_Label";
             this.K_Adi_Label.Size = new System.Drawing.Size(108, 22);
             this.K_Adi_Label.TabIndex = 2;
@@ -73,7 +73,7 @@
             this.Sifre_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Sifre_Label.AutoSize = true;
             this.Sifre_Label.ForeColor = System.Drawing.Color.Maroon;
-            this.Sifre_Label.Location = new System.Drawing.Point(48, 145);
+            this.Sifre_Label.Location = new System.Drawing.Point(51, 135);
             this.Sifre_Label.Name = "Sifre_Label";
             this.Sifre_Label.Size = new System.Drawing.Size(47, 22);
             this.Sifre_Label.TabIndex = 2;
@@ -92,7 +92,7 @@
             this.ParolaGosterSwitch.DisabledCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.ParolaGosterSwitch.DisabledUnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.ParolaGosterSwitch.IsDerivedStyle = true;
-            this.ParolaGosterSwitch.Location = new System.Drawing.Point(271, 145);
+            this.ParolaGosterSwitch.Location = new System.Drawing.Point(274, 135);
             this.ParolaGosterSwitch.Name = "ParolaGosterSwitch";
             this.ParolaGosterSwitch.Size = new System.Drawing.Size(58, 22);
             this.ParolaGosterSwitch.Style = MetroSet_UI.Enums.Style.Light;
@@ -117,7 +117,7 @@
             this.Giris_Button.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.Giris_Button.HoverTextColor = System.Drawing.Color.White;
             this.Giris_Button.IsDerivedStyle = true;
-            this.Giris_Button.Location = new System.Drawing.Point(166, 180);
+            this.Giris_Button.Location = new System.Drawing.Point(119, 170);
             this.Giris_Button.Name = "Giris_Button";
             this.Giris_Button.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.Giris_Button.NormalColor = System.Drawing.Color.DeepSkyBlue;
@@ -125,7 +125,7 @@
             this.Giris_Button.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Giris_Button.PressColor = System.Drawing.Color.Lime;
             this.Giris_Button.PressTextColor = System.Drawing.Color.White;
-            this.Giris_Button.Size = new System.Drawing.Size(99, 40);
+            this.Giris_Button.Size = new System.Drawing.Size(149, 40);
             this.Giris_Button.Style = MetroSet_UI.Enums.Style.Custom;
             this.Giris_Button.StyleManager = null;
             this.Giris_Button.TabIndex = 6;
@@ -145,7 +145,7 @@
             this.metroSetButton1.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.metroSetButton1.HoverTextColor = System.Drawing.Color.White;
             this.metroSetButton1.IsDerivedStyle = true;
-            this.metroSetButton1.Location = new System.Drawing.Point(27, 223);
+            this.metroSetButton1.Location = new System.Drawing.Point(9, 285);
             this.metroSetButton1.Name = "metroSetButton1";
             this.metroSetButton1.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.metroSetButton1.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -153,7 +153,7 @@
             this.metroSetButton1.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.metroSetButton1.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.metroSetButton1.PressTextColor = System.Drawing.Color.White;
-            this.metroSetButton1.Size = new System.Drawing.Size(124, 25);
+            this.metroSetButton1.Size = new System.Drawing.Size(124, 34);
             this.metroSetButton1.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetButton1.StyleManager = null;
             this.metroSetButton1.TabIndex = 7;
@@ -173,7 +173,7 @@
             this.kayitOl_Btn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.kayitOl_Btn.HoverTextColor = System.Drawing.Color.White;
             this.kayitOl_Btn.IsDerivedStyle = true;
-            this.kayitOl_Btn.Location = new System.Drawing.Point(27, 181);
+            this.kayitOl_Btn.Location = new System.Drawing.Point(9, 243);
             this.kayitOl_Btn.Name = "kayitOl_Btn";
             this.kayitOl_Btn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.kayitOl_Btn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -197,17 +197,17 @@
             this.cikisBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.cikisBttn.DisabledForeColor = System.Drawing.Color.Gray;
             this.cikisBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cikisBttn.HoverBorderColor = System.Drawing.Color.Red;
-            this.cikisBttn.HoverColor = System.Drawing.Color.Red;
+            this.cikisBttn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.cikisBttn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.cikisBttn.HoverTextColor = System.Drawing.Color.White;
             this.cikisBttn.IsDerivedStyle = true;
-            this.cikisBttn.Location = new System.Drawing.Point(293, 2);
+            this.cikisBttn.Location = new System.Drawing.Point(296, 4);
             this.cikisBttn.Name = "cikisBttn";
-            this.cikisBttn.NormalBorderColor = System.Drawing.Color.Red;
-            this.cikisBttn.NormalColor = System.Drawing.Color.Red;
+            this.cikisBttn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikisBttn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.cikisBttn.NormalTextColor = System.Drawing.Color.White;
-            this.cikisBttn.PressBorderColor = System.Drawing.Color.Black;
-            this.cikisBttn.PressColor = System.Drawing.Color.Black;
+            this.cikisBttn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.cikisBttn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
             this.cikisBttn.PressTextColor = System.Drawing.Color.White;
             this.cikisBttn.Size = new System.Drawing.Size(36, 29);
             this.cikisBttn.Style = MetroSet_UI.Enums.Style.Light;
@@ -224,7 +224,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(333, 262);
+            this.ClientSize = new System.Drawing.Size(333, 322);
             this.ControlBox = false;
             this.Controls.Add(this.cikisBttn);
             this.Controls.Add(this.kayitOl_Btn);
