@@ -36,6 +36,7 @@
             this.sifre_TxtBx = new System.Windows.Forms.TextBox();
             this.kID_Label = new MetroSet_UI.Controls.MetroSetLabel();
             this.kID_TxtBx = new System.Windows.Forms.TextBox();
+            this.cikBttn = new MetroSet_UI.Controls.MetroSetButton();
             this.SuspendLayout();
             // 
             // kAdi_Label
@@ -162,11 +163,40 @@
             this.kID_TxtBx.Size = new System.Drawing.Size(135, 27);
             this.kID_TxtBx.TabIndex = 4;
             // 
+            // cikBttn
+            // 
+            this.cikBttn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cikBttn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikBttn.DisabledForeColor = System.Drawing.Color.Gray;
+            this.cikBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cikBttn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.cikBttn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.cikBttn.HoverTextColor = System.Drawing.Color.White;
+            this.cikBttn.IsDerivedStyle = true;
+            this.cikBttn.Location = new System.Drawing.Point(324, -1);
+            this.cikBttn.Name = "cikBttn";
+            this.cikBttn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikBttn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikBttn.NormalTextColor = System.Drawing.Color.White;
+            this.cikBttn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.cikBttn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.cikBttn.PressTextColor = System.Drawing.Color.White;
+            this.cikBttn.Size = new System.Drawing.Size(34, 23);
+            this.cikBttn.Style = MetroSet_UI.Enums.Style.Light;
+            this.cikBttn.StyleManager = null;
+            this.cikBttn.TabIndex = 5;
+            this.cikBttn.Text = "X";
+            this.cikBttn.ThemeAuthor = "Narwin";
+            this.cikBttn.ThemeName = "MetroLite";
+            this.cikBttn.Click += new System.EventHandler(this.cikBttn_Click);
+            // 
             // KullaniciKayitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 361);
+            this.Controls.Add(this.cikBttn);
             this.Controls.Add(this.sifre_TxtBx);
             this.Controls.Add(this.kadi_TxtBx);
             this.Controls.Add(this.kID_TxtBx);
@@ -175,7 +205,6 @@
             this.Controls.Add(this.sifre_Label);
             this.Controls.Add(this.kAdi_Label);
             this.Controls.Add(this.kID_Label);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "KullaniciKayitForm";
             this.Text = "Kullanıcı Kayıt";
             this.ResumeLayout(false);
@@ -192,5 +221,6 @@
         private System.Windows.Forms.TextBox sifre_TxtBx;
         private MetroSet_UI.Controls.MetroSetLabel kID_Label;
         private System.Windows.Forms.TextBox kID_TxtBx;
+        private MetroSet_UI.Controls.MetroSetButton cikBttn;
     }
 }

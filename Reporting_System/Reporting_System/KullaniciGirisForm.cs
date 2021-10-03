@@ -52,5 +52,10 @@ namespace Reporting_System
             this.Hide();
             kayit.Show();
         }
+
+        private void cikisBttn_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

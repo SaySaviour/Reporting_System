@@ -23,6 +23,16 @@ namespace Reporting_System
         private void kayit_ekle_Btn_Click(object sender, EventArgs e)
         {
             dt_Procs.KullaniciEkle(yetki_ChckBx.Checked,kID_TxtBx,kadi_TxtBx, sifre_TxtBx, baglan);
+            KullaniciGirisForm giris = new KullaniciGirisForm();
+            this.Hide();
+            giris.Show();
+        }
+
+        private void cikBttn_Click(object sender, EventArgs e)
+        {
+            KullaniciGirisForm frm = new KullaniciGirisForm();
+            this.Hide();
+            frm.Show();
         }
     }
 }

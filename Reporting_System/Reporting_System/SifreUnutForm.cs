@@ -27,6 +27,9 @@ namespace Reporting_System
                 if (sifre_TxtBx.Text == sifreO_TxtBx.Text)
                 {
                     dt_Procs.SifreUnuttum(kadi_TxtBx, sifre_TxtBx, baglan);
+                    KullaniciGirisForm frm = new KullaniciGirisForm();
+                    this.Hide();
+                    frm.Show();
                 }
                 else
                     MessageBox.Show("Şifre ile Şifre Onay Alanları Birbiri ile Uyuşmamaktadır.","Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -34,6 +37,13 @@ namespace Reporting_System
             else
                 MessageBox.Show("Alanlar Boş Geçilemez......","Hata",MessageBoxButtons.OK,MessageBoxIcon.Error);
             
+        }
+
+        private void cikBttn_Click(object sender, EventArgs e)
+        {
+            KullaniciGirisForm frm = new KullaniciGirisForm();
+            this.Hide();
+            frm.Show();
         }
     }
 }

@@ -129,5 +129,17 @@ namespace Reporting_System
                 MessageBox.Show("Uygulama Açık Olmalıdır.", "Uygulama Kaydet Hata");
             }
         }
+
+        private void excelVeriAktarmaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExcelVeriAktarForm frm = new ExcelVeriAktarForm();
+            this.Hide();
+            frm.Show();
+        }
+
+        private void cikBttn_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

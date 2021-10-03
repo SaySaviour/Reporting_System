@@ -41,12 +41,24 @@
             this.TabloListe_CMBBX = new MetroSet_UI.Controls.MetroSetComboBox();
             this.ExcelT_AlanAktar_BTN = new MetroSet_UI.Controls.MetroSetButton();
             this.TabloDataGridView = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.açToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kaydetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.farkliKaydetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.geriBtn = new MetroSet_UI.Controls.MetroSetButton();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.cikBttn = new MetroSet_UI.Controls.MetroSetButton();
             this.tablo_StunGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TabloDataGridView)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tablo_StunGroupBox
             // 
+            this.tablo_StunGroupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tablo_StunGroupBox.Controls.Add(this.metroSetLabel4);
             this.tablo_StunGroupBox.Controls.Add(this.metroSetLabel3);
             this.tablo_StunGroupBox.Controls.Add(this.metroSetLabel5);
@@ -67,6 +79,7 @@
             // 
             // metroSetLabel4
             // 
+            this.metroSetLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metroSetLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.metroSetLabel4.IsDerivedStyle = true;
             this.metroSetLabel4.Location = new System.Drawing.Point(119, 130);
@@ -81,6 +94,7 @@
             // 
             // metroSetLabel3
             // 
+            this.metroSetLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metroSetLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.metroSetLabel3.IsDerivedStyle = true;
             this.metroSetLabel3.Location = new System.Drawing.Point(35, 130);
@@ -95,6 +109,7 @@
             // 
             // metroSetLabel5
             // 
+            this.metroSetLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metroSetLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.metroSetLabel5.IsDerivedStyle = true;
             this.metroSetLabel5.Location = new System.Drawing.Point(367, 40);
@@ -109,6 +124,7 @@
             // 
             // metroSetLabel2
             // 
+            this.metroSetLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metroSetLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.metroSetLabel2.IsDerivedStyle = true;
             this.metroSetLabel2.Location = new System.Drawing.Point(215, 40);
@@ -123,6 +139,7 @@
             // 
             // metroSetLabel1
             // 
+            this.metroSetLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metroSetLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.metroSetLabel1.IsDerivedStyle = true;
             this.metroSetLabel1.Location = new System.Drawing.Point(62, 40);
@@ -138,6 +155,7 @@
             // Columns_CMBBX
             // 
             this.Columns_CMBBX.AllowDrop = true;
+            this.Columns_CMBBX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Columns_CMBBX.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.Columns_CMBBX.BackColor = System.Drawing.Color.Transparent;
             this.Columns_CMBBX.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -367,6 +385,7 @@
             // Rows_CMBBX
             // 
             this.Rows_CMBBX.AllowDrop = true;
+            this.Rows_CMBBX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Rows_CMBBX.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.Rows_CMBBX.BackColor = System.Drawing.Color.Transparent;
             this.Rows_CMBBX.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -596,6 +615,7 @@
             // TabloVeri_CMBBX
             // 
             this.TabloVeri_CMBBX.AllowDrop = true;
+            this.TabloVeri_CMBBX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TabloVeri_CMBBX.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.TabloVeri_CMBBX.BackColor = System.Drawing.Color.Transparent;
             this.TabloVeri_CMBBX.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -624,6 +644,7 @@
             // TabloAlan_CMBBX
             // 
             this.TabloAlan_CMBBX.AllowDrop = true;
+            this.TabloAlan_CMBBX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TabloAlan_CMBBX.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.TabloAlan_CMBBX.BackColor = System.Drawing.Color.Transparent;
             this.TabloAlan_CMBBX.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -653,6 +674,7 @@
             // TabloListe_CMBBX
             // 
             this.TabloListe_CMBBX.AllowDrop = true;
+            this.TabloListe_CMBBX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TabloListe_CMBBX.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.TabloListe_CMBBX.BackColor = System.Drawing.Color.Transparent;
             this.TabloListe_CMBBX.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
@@ -686,6 +708,7 @@
             // 
             // ExcelT_AlanAktar_BTN
             // 
+            this.ExcelT_AlanAktar_BTN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ExcelT_AlanAktar_BTN.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.ExcelT_AlanAktar_BTN.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.ExcelT_AlanAktar_BTN.DisabledForeColor = System.Drawing.Color.Gray;
@@ -715,6 +738,7 @@
             // 
             this.TabloDataGridView.AllowUserToAddRows = false;
             this.TabloDataGridView.AllowUserToDeleteRows = false;
+            this.TabloDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TabloDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TabloDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TabloDataGridView.Location = new System.Drawing.Point(12, 304);
@@ -724,20 +748,136 @@
             this.TabloDataGridView.Size = new System.Drawing.Size(498, 202);
             this.TabloDataGridView.TabIndex = 7;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dosyaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(521, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // dosyaToolStripMenuItem
+            // 
+            this.dosyaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.açToolStripMenuItem,
+            this.kaydetToolStripMenuItem,
+            this.farkliKaydetToolStripMenuItem,
+            this.cikToolStripMenuItem});
+            this.dosyaToolStripMenuItem.Name = "dosyaToolStripMenuItem";
+            this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.dosyaToolStripMenuItem.Text = "Dosya";
+            // 
+            // açToolStripMenuItem
+            // 
+            this.açToolStripMenuItem.Name = "açToolStripMenuItem";
+            this.açToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.açToolStripMenuItem.Text = "Aç";
+            this.açToolStripMenuItem.Click += new System.EventHandler(this.açToolStripMenuItem_Click);
+            // 
+            // kaydetToolStripMenuItem
+            // 
+            this.kaydetToolStripMenuItem.Name = "kaydetToolStripMenuItem";
+            this.kaydetToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.kaydetToolStripMenuItem.Text = "Kaydet";
+            this.kaydetToolStripMenuItem.Click += new System.EventHandler(this.kaydetToolStripMenuItem_Click);
+            // 
+            // farkliKaydetToolStripMenuItem
+            // 
+            this.farkliKaydetToolStripMenuItem.Name = "farkliKaydetToolStripMenuItem";
+            this.farkliKaydetToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.farkliKaydetToolStripMenuItem.Text = "Farklı Kaydet";
+            this.farkliKaydetToolStripMenuItem.Click += new System.EventHandler(this.farkliKaydetToolStripMenuItem_Click);
+            // 
+            // cikToolStripMenuItem
+            // 
+            this.cikToolStripMenuItem.Name = "cikToolStripMenuItem";
+            this.cikToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.cikToolStripMenuItem.Text = "Çık";
+            this.cikToolStripMenuItem.Click += new System.EventHandler(this.cikToolStripMenuItem_Click);
+            // 
+            // geriBtn
+            // 
+            this.geriBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.geriBtn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.geriBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.geriBtn.DisabledForeColor = System.Drawing.Color.Gray;
+            this.geriBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.geriBtn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.geriBtn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.geriBtn.HoverTextColor = System.Drawing.Color.White;
+            this.geriBtn.IsDerivedStyle = true;
+            this.geriBtn.Location = new System.Drawing.Point(434, 51);
+            this.geriBtn.Name = "geriBtn";
+            this.geriBtn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.geriBtn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.geriBtn.NormalTextColor = System.Drawing.Color.White;
+            this.geriBtn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.geriBtn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.geriBtn.PressTextColor = System.Drawing.Color.White;
+            this.geriBtn.Size = new System.Drawing.Size(75, 23);
+            this.geriBtn.Style = MetroSet_UI.Enums.Style.Light;
+            this.geriBtn.StyleManager = null;
+            this.geriBtn.TabIndex = 9;
+            this.geriBtn.Text = "Geri";
+            this.geriBtn.ThemeAuthor = "Narwin";
+            this.geriBtn.ThemeName = "MetroLite";
+            this.geriBtn.Click += new System.EventHandler(this.geriBtn_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // cikBttn
+            // 
+            this.cikBttn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cikBttn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikBttn.DisabledForeColor = System.Drawing.Color.Gray;
+            this.cikBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cikBttn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.cikBttn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.cikBttn.HoverTextColor = System.Drawing.Color.White;
+            this.cikBttn.IsDerivedStyle = true;
+            this.cikBttn.Location = new System.Drawing.Point(486, 0);
+            this.cikBttn.Name = "cikBttn";
+            this.cikBttn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikBttn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikBttn.NormalTextColor = System.Drawing.Color.White;
+            this.cikBttn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.cikBttn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.cikBttn.PressTextColor = System.Drawing.Color.White;
+            this.cikBttn.Size = new System.Drawing.Size(35, 33);
+            this.cikBttn.Style = MetroSet_UI.Enums.Style.Light;
+            this.cikBttn.StyleManager = null;
+            this.cikBttn.TabIndex = 10;
+            this.cikBttn.Text = "X";
+            this.cikBttn.ThemeAuthor = "Narwin";
+            this.cikBttn.ThemeName = "MetroLite";
+            this.cikBttn.Click += new System.EventHandler(this.cikBttn_Click);
+            // 
             // ExcelVeriAktarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(521, 509);
+            this.Controls.Add(this.cikBttn);
+            this.Controls.Add(this.geriBtn);
             this.Controls.Add(this.TabloDataGridView);
             this.Controls.Add(this.tablo_StunGroupBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "ExcelVeriAktarForm";
             this.Text = "ExcelVeriAktarForm";
             this.tablo_StunGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TabloDataGridView)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -755,5 +895,15 @@
         private MetroSet_UI.Controls.MetroSetComboBox TabloListe_CMBBX;
         private MetroSet_UI.Controls.MetroSetButton ExcelT_AlanAktar_BTN;
         private System.Windows.Forms.DataGridView TabloDataGridView;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem dosyaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem açToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kaydetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem farkliKaydetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cikToolStripMenuItem;
+        private MetroSet_UI.Controls.MetroSetButton geriBtn;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private MetroSet_UI.Controls.MetroSetButton cikBttn;
     }
 }

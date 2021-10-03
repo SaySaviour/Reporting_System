@@ -36,6 +36,7 @@
             this.Giris_Button = new MetroSet_UI.Controls.MetroSetButton();
             this.metroSetButton1 = new MetroSet_UI.Controls.MetroSetButton();
             this.kayitOl_Btn = new MetroSet_UI.Controls.MetroSetButton();
+            this.cikisBttn = new MetroSet_UI.Controls.MetroSetButton();
             this.SuspendLayout();
             // 
             // Sifre_TextBox
@@ -135,6 +136,7 @@
             // 
             // metroSetButton1
             // 
+            this.metroSetButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.metroSetButton1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.metroSetButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.metroSetButton1.DisabledForeColor = System.Drawing.Color.Gray;
@@ -162,6 +164,7 @@
             // 
             // kayitOl_Btn
             // 
+            this.kayitOl_Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kayitOl_Btn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.kayitOl_Btn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.kayitOl_Btn.DisabledForeColor = System.Drawing.Color.Gray;
@@ -187,6 +190,34 @@
             this.kayitOl_Btn.ThemeName = "MetroLite";
             this.kayitOl_Btn.Click += new System.EventHandler(this.kayitOl_Btn_Click);
             // 
+            // cikisBttn
+            // 
+            this.cikisBttn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cikisBttn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikisBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.cikisBttn.DisabledForeColor = System.Drawing.Color.Gray;
+            this.cikisBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cikisBttn.HoverBorderColor = System.Drawing.Color.Red;
+            this.cikisBttn.HoverColor = System.Drawing.Color.Red;
+            this.cikisBttn.HoverTextColor = System.Drawing.Color.White;
+            this.cikisBttn.IsDerivedStyle = true;
+            this.cikisBttn.Location = new System.Drawing.Point(293, 2);
+            this.cikisBttn.Name = "cikisBttn";
+            this.cikisBttn.NormalBorderColor = System.Drawing.Color.Red;
+            this.cikisBttn.NormalColor = System.Drawing.Color.Red;
+            this.cikisBttn.NormalTextColor = System.Drawing.Color.White;
+            this.cikisBttn.PressBorderColor = System.Drawing.Color.Black;
+            this.cikisBttn.PressColor = System.Drawing.Color.Black;
+            this.cikisBttn.PressTextColor = System.Drawing.Color.White;
+            this.cikisBttn.Size = new System.Drawing.Size(36, 29);
+            this.cikisBttn.Style = MetroSet_UI.Enums.Style.Light;
+            this.cikisBttn.StyleManager = null;
+            this.cikisBttn.TabIndex = 9;
+            this.cikisBttn.Text = "X";
+            this.cikisBttn.ThemeAuthor = "Narwin";
+            this.cikisBttn.ThemeName = "MetroLite";
+            this.cikisBttn.Click += new System.EventHandler(this.cikisBttn_Click);
+            // 
             // KullaniciGirisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -195,6 +226,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(333, 262);
             this.ControlBox = false;
+            this.Controls.Add(this.cikisBttn);
             this.Controls.Add(this.kayitOl_Btn);
             this.Controls.Add(this.metroSetButton1);
             this.Controls.Add(this.Giris_Button);
@@ -203,7 +235,6 @@
             this.Controls.Add(this.K_Adi_Label);
             this.Controls.Add(this.K_Adi_TextBox);
             this.Controls.Add(this.Sifre_TextBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "KullaniciGirisForm";
             this.SmallLineColor1 = System.Drawing.Color.Red;
             this.SmallLineColor2 = System.Drawing.Color.Red;
@@ -224,6 +255,7 @@
         private MetroSet_UI.Controls.MetroSetButton Giris_Button;
         private MetroSet_UI.Controls.MetroSetButton metroSetButton1;
         private MetroSet_UI.Controls.MetroSetButton kayitOl_Btn;
+        private MetroSet_UI.Controls.MetroSetButton cikisBttn;
     }
 }
 
