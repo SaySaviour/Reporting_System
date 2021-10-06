@@ -34,6 +34,7 @@ C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting
 C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting_System\bin\Debug\MetroSet UI.dll
 C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting_System\obj\Debug\Reporting_System.csprojAssemblyReference.cache
 C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting_System\obj\Debug\Reporting_System.ExcelTabloAktarForm.resources
-C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting_System\obj\Debug\Reporting_System.ExcelVeriAktarForm.resources
 C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting_System\obj\Debug\Reporting_System.KullaniciKayitForm.resources
 C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting_System\obj\Debug\Reporting_System.SifreUnutForm.resources
+C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting_System\obj\Debug\Reporting_System.ExcelFonksiyon.resources
+C:\Users\Casper\Desktop\Unity Github\Reporting_System\Reporting_System\Reporting_System\obj\Debug\Reporting_System.SQLGorsel.resources

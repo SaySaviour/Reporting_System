@@ -91,12 +91,13 @@
     <Compile Include="ExcelTabloAktarForm.Designer.cs">
       <DependentUpon>ExcelTabloAktarForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExcelVeriAktarForm.cs">
+    <Compile Include="ExcelFonksiyon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExcelVeriAktarForm.Designer.cs">
-      <DependentUpon>ExcelVeriAktarForm.cs</DependentUpon>
+    <Compile Include="ExcelFonksiyon.Designer.cs">
+      <DependentUpon>ExcelFonksiyon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fonksiyonlar.cs" />
     <Compile Include="KullaniciGirisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,11 +118,17 @@
     <Compile Include="SifreUnutForm.Designer.cs">
       <DependentUpon>SifreUnutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SQLGorsel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SQLGorsel.Designer.cs">
+      <DependentUpon>SQLGorsel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ExcelTabloAktarForm.resx">
       <DependentUpon>ExcelTabloAktarForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExcelVeriAktarForm.resx">
-      <DependentUpon>ExcelVeriAktarForm.cs</DependentUpon>
+    <EmbeddedResource Include="ExcelFonksiyon.resx">
+      <DependentUpon>ExcelFonksiyon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KullaniciGirisForm.resx">
       <DependentUpon>KullaniciGirisForm.cs</DependentUpon>
@@ -140,6 +147,9 @@
     </Compile>
     <EmbeddedResource Include="SifreUnutForm.resx">
       <DependentUpon>SifreUnutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLGorsel.resx">
+      <DependentUpon>SQLGorsel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

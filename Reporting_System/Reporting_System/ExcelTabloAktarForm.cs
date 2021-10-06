@@ -130,16 +130,56 @@ namespace Reporting_System
             }
         }
 
-        private void excelVeriAktarmaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ExcelVeriAktarForm frm = new ExcelVeriAktarForm();
-            this.Hide();
-            frm.Show();
-        }
-
         private void cikBttn_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void ExcelT_AlanAktar_BTN_Click(object sender, EventArgs e)
+        {
+            if (TabloListe_CMBBX.Text != "" && TabloAlan_CMBBX.Text != "" && TabloVeri_CMBBX.Text != "")
+            {
+                if (Rows_CMBBX.Text != "" && Columns_CMBBX.Text != "")
+                {
+                    workbook = excel.Workbooks.Add(missing);
+                    sheet1 = (Worksheet)workbook.Sheets[1];
+                    sheet1.Cells[int.Parse(Rows_CMBBX.Text), int.Parse(Columns_CMBBX.Text)] = TabloVeri_CMBBX.Text;
+                    excel.Visible = true;
+                }
+                else
+                    MessageBox.Show("Satır ve Sütun alanları boş geçilemez..!!! ", "Boş Alan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+                MessageBox.Show("Tablo,Tablo Alanları veya Tablo verisi bölümleri boş geçilemez..!!! ", "Boş Alan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void TabloListe_CMBBX_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TabloListeDataGrid.DataSource = dtBaseProcss.Db_Tables(TabloListe_CMBBX, baglan).DefaultView;
+            TabloAlan_CMBBX.Items.Clear();
+            TabloVeri_CMBBX.Items.Clear();
+            for (int i = 0; i < dtBaseProcss.Db_Tables(TabloListe_CMBBX, baglan).Columns.Count; i++)
+            {
+                TabloAlan_CMBBX.Items.Add(dtBaseProcss.Db_Tables(TabloListe_CMBBX, baglan).Columns[i].ColumnName);
+            }
+        }
+
+        private void TabloAlan_CMBBX_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TabloListeDataGrid.DataSource = dtBaseProcss.Table_Column_Values(TabloListe_CMBBX, TabloAlan_CMBBX, baglan).DefaultView;
+            TabloVeri_CMBBX.Items.Clear();
+            for (int i = 0; i < dtBaseProcss.Db_Tables(TabloListe_CMBBX, baglan).Rows.Count; i++)
+            {
+                TabloVeri_CMBBX.Items.Add(dtBaseProcss.Table_Column_Values(TabloListe_CMBBX, TabloAlan_CMBBX, baglan).Rows[i].ItemArray[0].ToString());
+            }
+        }
+
+        private void excel_Fonksiyon_MenuStrip_Click(object sender, EventArgs e)
+        {
+            ExcelFonksiyon frm = new ExcelFonksiyon();
+            this.Hide();
+            frm.Show();
         }
     }
 }
