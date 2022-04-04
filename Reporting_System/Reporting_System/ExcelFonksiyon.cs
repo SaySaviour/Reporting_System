@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using System.Collections;
 using Microsoft.Office.Interop.Excel;
 
 namespace Reporting_System
@@ -15,6 +16,7 @@ namespace Reporting_System
     public partial class ExcelFonksiyon : Form
     {
         Database_Process dbProcss = new Database_Process();
+        Fonksiyonlar fonk = new Fonksiyonlar();
         NpgsqlConnection baglan = new Database_Process().db_Baglanti("localhost", "db_Reporting_System", "postgres", "1234");
         Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
         object missing = Type.Missing;
@@ -23,6 +25,7 @@ namespace Reporting_System
         bool durum=false;
         Range range;
         int x = 0;
+        ArrayList stliste = new ArrayList();
         public ExcelFonksiyon()
         {
             InitializeComponent();
@@ -97,18 +100,63 @@ namespace Reporting_System
             SQLGorsel sqlgorsel = new SQLGorsel();
             sqlgorsel.BackColor = Color.Gainsboro;
             sqlgorsel.labelName.Text = "X" + x.ToString();
+            stliste.Add("X" + x.ToString());
             x++;
             sqlgorsel.baglan = baglan;
             flowLayoutPanel1.Controls.Add(sqlgorsel);
+            updateExitNodes();
+        }
+        private void ekleFonkBttn_Click(object sender, EventArgs e)
+        {
+            SQLGorselFonksiyon sqlgorselfonksiyon = new SQLGorselFonksiyon();
+            sqlgorselfonksiyon.BackColor = Color.LightSteelBlue;
+            sqlgorselfonksiyon.baglan = baglan;
+            sqlgorselfonksiyon.Tag = "exit_node";
+            updateExitNodesOne(sqlgorselfonksiyon);
+            flowLayoutPanel1.Controls.Add(sqlgorselfonksiyon);
+        }
+        private void updateExitNodes()
+        {
+            foreach (UserControl sqlgorselfonksiyon in flowLayoutPanel1.Controls)
+            {
+                if (sqlgorselfonksiyon.Tag == "exit_node")
+                {
+                    SQLGorselFonksiyon temp = (SQLGorselFonksiyon)sqlgorselfonksiyon;
+                    addDistinctNames(temp.bilesenNumaraCmbBx1, temp.bilesenNumaraCmbBx2);
+                }
+            }
+        }
+        private void updateExitNodesOne(SQLGorselFonksiyon temp)
+        {
+            addDistinctNames(temp.bilesenNumaraCmbBx1, temp.bilesenNumaraCmbBx2);
+        }
+        private void addDistinctNames(ComboBox first,ComboBox second)
+        {
+            first.Items.Clear();
+            second.Items.Clear();
+            foreach (string st in stliste)
+            {
+                first.Items.Add(st);
+                second.Items.Add(st);
+            }
         }
 
         private void silBtn_Click(object sender, EventArgs e)
         {
             foreach (UserControl sqlgorsel in flowLayoutPanel1.Controls)
             {
-                SQLGorsel temp = (SQLGorsel)sqlgorsel;
-                if (temp.ChckBx.Checked)
-                    flowLayoutPanel1.Controls.Remove(temp);
+                if (sqlgorsel.Tag == "exit_node")
+                {
+                    SQLGorselFonksiyon temp = (SQLGorselFonksiyon)sqlgorsel;
+                    if (temp.ChckBx.Checked)
+                        flowLayoutPanel1.Controls.Remove(temp);
+                }
+                else
+                {
+                    SQLGorsel temp = (SQLGorsel)sqlgorsel;
+                    if (temp.ChckBx.Checked)
+                        flowLayoutPanel1.Controls.Remove(temp);
+                }
             }
         }
 
@@ -116,9 +164,18 @@ namespace Reporting_System
         {
             foreach (UserControl sqlgorsel in flowLayoutPanel1.Controls)
             {
-                SQLGorsel temp = (SQLGorsel)sqlgorsel;
-                if (temp.ChckBx.Checked)
-                    flowLayoutPanel1.Controls.SetChildIndex(sqlgorsel,flowLayoutPanel1.Controls.GetChildIndex(sqlgorsel)-1);
+                if (sqlgorsel.Tag == "exit_node")
+                {
+                    SQLGorselFonksiyon temp = (SQLGorselFonksiyon)sqlgorsel;
+                    if (temp.ChckBx.Checked)
+                        flowLayoutPanel1.Controls.SetChildIndex(sqlgorsel,flowLayoutPanel1.Controls.GetChildIndex(sqlgorsel)-1);
+                }
+                else
+                {
+                    SQLGorsel temp = (SQLGorsel)sqlgorsel;
+                    if (temp.ChckBx.Checked)
+                        flowLayoutPanel1.Controls.SetChildIndex(sqlgorsel, flowLayoutPanel1.Controls.GetChildIndex(sqlgorsel) - 1);
+                }
             }
         }
 
@@ -126,10 +183,66 @@ namespace Reporting_System
         {
             foreach (UserControl sqlgorsel in flowLayoutPanel1.Controls)
             {
-                SQLGorsel temp = (SQLGorsel)sqlgorsel;
-                if (temp.ChckBx.Checked)
-                    flowLayoutPanel1.Controls.SetChildIndex(sqlgorsel, flowLayoutPanel1.Controls.GetChildIndex(sqlgorsel) + 1);
+                if (sqlgorsel.Tag == "exit_node")
+                {
+                    SQLGorselFonksiyon temp = (SQLGorselFonksiyon)sqlgorsel;
+                    if (temp.ChckBx.Checked)
+                        flowLayoutPanel1.Controls.SetChildIndex(sqlgorsel, flowLayoutPanel1.Controls.GetChildIndex(sqlgorsel) + 1);
+                }
+                else
+                {
+                    SQLGorsel temp = (SQLGorsel)sqlgorsel;
+                    if (temp.ChckBx.Checked)
+                        flowLayoutPanel1.Controls.SetChildIndex(sqlgorsel, flowLayoutPanel1.Controls.GetChildIndex(sqlgorsel) + 1);
+                }
             }
+        }
+        public void ExportToExcel(FlowLayoutPanel tbl)
+        {
+            byte[] array;
+            string str;
+            int startChar2;
+            int startChar;
+            int starting_Column = 1;
+            int start_Line = 1;
+            System.Data.DataTable dataTable = new System.Data.DataTable();
+            start_Line++;
+            workbook = excel.Workbooks.Add(missing);
+            sheet1 = (Worksheet)workbook.Sheets[1];
+            if (tbl == null || tbl.Controls.Count == 0)
+                MessageBox.Show("Panel İçeriği boştur. Lütfen Ekleme Yapınız.");
+            foreach (SQLGorsel sqlg in tbl.Controls.OfType<SQLGorsel>())
+            {
+                foreach (SQLGorselFonksiyon sqlgf in tbl.Controls.OfType<SQLGorselFonksiyon>())
+                {
+                    str = sqlgf.excelCellTxtBx.Text;
+                    array = Encoding.ASCII.GetBytes(str);
+                    startChar = Convert.ToInt32(array[0]);
+                    startChar2 = Convert.ToInt32(str.Substring(1));
+                    if (sqlg.labelName.Text == sqlgf.bilesenNumaraCmbBx1.Text)
+                    {
+                        dataTable = fonk.searchInOneColumn(sqlg.tabloAdCmbBx, sqlg.tabloAlanAdCmbBx.Text, sqlgf.alan1DegerTxtBx.Text, baglan);
+                        if (dataTable.Rows.Count<=0)
+                        {
+
+                            MessageBox.Show("Lütfen Doğru Değer Giriniz.....");
+                        }
+                        else
+                        {
+                            starting_Column = (startChar - 64);
+                            start_Line = startChar2;
+                            sheet1.Cells[start_Line, starting_Column] = sqlgf.alan1DegerTxtBx.Text;
+                            excel.Visible = true;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        private void excelAktarBttn_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(flowLayoutPanel1);
         }
     }
 }

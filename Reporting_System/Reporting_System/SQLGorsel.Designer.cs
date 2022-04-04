@@ -130,7 +130,7 @@
             // 
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelName.IsDerivedStyle = true;
-            this.labelName.Location = new System.Drawing.Point(489, 5);
+            this.labelName.Location = new System.Drawing.Point(656, 8);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(44, 23);
             this.labelName.Style = MetroSet_UI.Enums.Style.Light;
@@ -153,7 +153,7 @@
             this.ChckBx.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
             this.ChckBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ChckBx.IsDerivedStyle = true;
-            this.ChckBx.Location = new System.Drawing.Point(539, 12);
+            this.ChckBx.Location = new System.Drawing.Point(706, 15);
             this.ChckBx.Name = "ChckBx";
             this.ChckBx.SignStyle = MetroSet_UI.Enums.SignStyle.Sign;
             this.ChckBx.Size = new System.Drawing.Size(19, 16);
@@ -167,23 +167,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 34);
             this.Controls.Add(this.ChckBx);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.tabloVeriCmboBx);
             this.Controls.Add(this.tabloAlanAdCmbBx);
             this.Controls.Add(this.tabloAdCmbBx);
             this.Name = "SQLGorsel";
-            this.Text = "SQLGorsel";
+            this.Size = new System.Drawing.Size(728, 34);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroSet_UI.Controls.MetroSetComboBox tabloAdCmbBx;
-        private MetroSet_UI.Controls.MetroSetComboBox tabloAlanAdCmbBx;
-        private MetroSet_UI.Controls.MetroSetComboBox tabloVeriCmboBx;
+        public MetroSet_UI.Controls.MetroSetComboBox tabloAdCmbBx;
+        public MetroSet_UI.Controls.MetroSetComboBox tabloAlanAdCmbBx;
+        public MetroSet_UI.Controls.MetroSetComboBox tabloVeriCmboBx;
         public MetroSet_UI.Controls.MetroSetLabel labelName;
         public MetroSet_UI.Controls.MetroSetCheckBox ChckBx;
     }

@@ -124,6 +124,12 @@
     <Compile Include="SQLGorsel.Designer.cs">
       <DependentUpon>SQLGorsel.cs</DependentUpon>
     </Compile>
+    <Compile Include="SQLGorselFonksiyon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SQLGorselFonksiyon.Designer.cs">
+      <DependentUpon>SQLGorselFonksiyon.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ExcelTabloAktarForm.resx">
       <DependentUpon>ExcelTabloAktarForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SQLGorsel.resx">
       <DependentUpon>SQLGorsel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLGorselFonksiyon.resx">
+      <DependentUpon>SQLGorselFonksiyon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

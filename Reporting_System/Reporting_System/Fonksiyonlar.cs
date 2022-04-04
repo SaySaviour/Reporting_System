@@ -23,28 +23,28 @@ namespace Reporting_System
             {
                 case 0:
                     dTable.Clear();
-                    sorgu = "Select * from \"User_Login\" Where \"'" + columnName + "'\"='" + value + "'";
+                    sorgu = "Select * from \"User_Login\" Where \"" + columnName + "\"='" + value + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 1:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Buy\" Where \"'" + columnName + "'\"='" + value + "'";
+                    sorgu = "Select * from \"Product_Buy\" Where \"" + columnName + "\"='" + value + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 2:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Sell\" Where \"'" + columnName + "'\"='" + value + "'";
+                    sorgu = "Select * from \"Product_Sell\" Where \"" + columnName + "\"='" + value + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 3:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Infmtn\" Where \"'" + columnName + "'\"='" + value + "'";
+                    sorgu = "Select * from \"Product_Infmtn\" Where \"" + columnName + "\"='" + value + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
@@ -65,28 +65,28 @@ namespace Reporting_System
             {
                 case 0:
                     dTable.Clear();
-                    sorgu = "Select * from \"User_Login\" Where \"'" + columnName1 + "'\"='" + value1 + "' and \"'" + columnName2 + "'\"='" + value2 + "'";
+                    sorgu = "Select * from \"User_Login\" Where \"" + columnName1 + "\"='" + value1 + "' and \"" + columnName2 + "\"='" + value2 + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 1:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Buy\" Where \"'" + columnName1 + "'\"='" + value1 + "'and \"'" + columnName2 + "'\"='" + value2 + "'";
+                    sorgu = "Select * from \"Product_Buy\" Where \"" + columnName1 + "\"='" + value1 + "'and \"" + columnName2 + "\"='" + value2 + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 2:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Sell\" Where \"'" + columnName1 + "'\"='" + value1 + "'and \"'" + columnName2 + "'\"='" + value2 + "'";
+                    sorgu = "Select * from \"Product_Sell\" Where \"" + columnName1 + "\"='" + value1 + "'and \"'" + columnName2 + "'\"='" + value2 + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 3:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Infmtn\" Where \"'" + columnName1 + "'\"='" + value1 + "'and \"'" + columnName2 + "'\"='" + value2 + "'";
+                    sorgu = "Select * from \"Product_Infmtn\" Where \"" + columnName1 + "\"='" + value1 + "'and \"'" + columnName2 + "'\"='" + value2 + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
@@ -107,28 +107,28 @@ namespace Reporting_System
             {
                 case 0:
                     dTable.Clear();
-                    sorgu = "Select * from \"User_Login\" Where \"'" + columnName1 + "'\"='" + value1 + "' or \"'" + columnName2 + "'\"='" + value2 + "'";
+                    sorgu = "Select * from \"User_Login\" Where \"" + columnName1 + "\"='" + value1 + "' or \"" + columnName2 + "\"='" + value2 + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 1:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Buy\" Where \"'" + columnName1 + "'\"='" + value1 + "'or \"'" + columnName2 + "'\"='" + value2 + "'";
+                    sorgu = "Select * from \"Product_Buy\" Where \"" + columnName1 + "\"='" + value1 + "'or \"" + columnName2 + "\"='" + value2 + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 2:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Sell\" Where \"'" + columnName1 + "'\"='" + value1 + "'or \"'" + columnName2 + "'\"='" + value2 + "'";
+                    sorgu = "Select * from \"Product_Sell\" Where \"" + columnName1 + "\"='" + value1 + "'or \"" + columnName2 + "\"='" + value2 + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 3:
                     dTable.Clear();
-                    sorgu = "Select * from \"Product_Infmtn\" Where \"'" + columnName1 + "'\"='" + value1 + "'or \"'" + columnName2 + "'\"='" + value2 + "'";
+                    sorgu = "Select * from \"Product_Infmtn\" Where \"" + columnName1 + "\"='" + value1 + "'or \"" + columnName2 + "\"='" + value2 + "'";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
@@ -149,28 +149,28 @@ namespace Reporting_System
             {
                 case 0:
                     dTable.Clear();
-                    sorgu = "Select \"'"+columnName+"'\" from \"User_Login\"";
+                    sorgu = "Select \""+columnName+"\" from \"User_Login\"";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 1:
                     dTable.Clear();
-                    sorgu = "Select \"'" + columnName + "'\" from \"Product_Buy\"";
+                    sorgu = "Select \"" + columnName + "\" from \"Product_Buy\"";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 2:
                     dTable.Clear();
-                    sorgu = "Select \"'" + columnName + "'\" from \"Product_Sell\"";
+                    sorgu = "Select \"" + columnName + "\" from \"Product_Sell\"";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 3:
                     dTable.Clear();
-                    sorgu = "Select \"'" + columnName + "'\" from \"Product_Infmtn\"";
+                    sorgu = "Select \"" + columnName + "\" from \"Product_Infmtn\"";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
@@ -191,28 +191,28 @@ namespace Reporting_System
             {
                 case 0:
                     dTable.Clear();
-                    sorgu = "Select SUM(\"'" + columnName + "'\") from \"User_Login\"";
+                    sorgu = "Select SUM(\"" + columnName + "\") from \"User_Login\"";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 1:
                     dTable.Clear();
-                    sorgu = "Select SUM(\"'" + columnName + "'\") from \"Product_Buy\"";
+                    sorgu = "Select SUM(\"" + columnName + "\") from \"Product_Buy\"";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 2:
                     dTable.Clear();
-                    sorgu = "Select SUM(\"'" + columnName + "'\") from \"Product_Sell\"";
+                    sorgu = "Select SUM(\"" + columnName + "\") from \"Product_Sell\"";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();
                     return dTable;
                 case 3:
                     dTable.Clear();
-                    sorgu = "Select SUM(\"'" + columnName + "'\") from \"Product_Infmtn\"";
+                    sorgu = "Select SUM(\"" + columnName + "\") from \"Product_Infmtn\"";
                     da = new NpgsqlDataAdapter(sorgu, baglan);
                     da.Fill(dTable);
                     baglan.Close();

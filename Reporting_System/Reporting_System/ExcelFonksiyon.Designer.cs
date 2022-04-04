@@ -39,12 +39,13 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.cikBttn = new MetroSet_UI.Controls.MetroSetButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ekleFonkBttn = new MetroSet_UI.Controls.MetroSetButton();
+            this.downButton = new MetroSet_UI.Controls.MetroSetButton();
+            this.upperButton = new MetroSet_UI.Controls.MetroSetButton();
+            this.silBtn = new MetroSet_UI.Controls.MetroSetButton();
             this.ekleBttn = new MetroSet_UI.Controls.MetroSetButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.silBtn = new MetroSet_UI.Controls.MetroSetButton();
-            this.upperButton = new MetroSet_UI.Controls.MetroSetButton();
-            this.downButton = new MetroSet_UI.Controls.MetroSetButton();
-            this.ekleFonkBttn = new MetroSet_UI.Controls.MetroSetButton();
+            this.excelAktarBttn = new MetroSet_UI.Controls.MetroSetButton();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             this.dosyaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(702, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(906, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -108,7 +109,7 @@
             this.geriBtn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.geriBtn.HoverTextColor = System.Drawing.Color.White;
             this.geriBtn.IsDerivedStyle = true;
-            this.geriBtn.Location = new System.Drawing.Point(622, 40);
+            this.geriBtn.Location = new System.Drawing.Point(831, 40);
             this.geriBtn.Name = "geriBtn";
             this.geriBtn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.geriBtn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -139,7 +140,7 @@
             this.cikBttn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
             this.cikBttn.HoverTextColor = System.Drawing.Color.White;
             this.cikBttn.IsDerivedStyle = true;
-            this.cikBttn.Location = new System.Drawing.Point(662, 0);
+            this.cikBttn.Location = new System.Drawing.Point(871, 0);
             this.cikBttn.Name = "cikBttn";
             this.cikBttn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.cikBttn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
@@ -158,6 +159,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.excelAktarBttn);
             this.groupBox1.Controls.Add(this.ekleFonkBttn);
             this.groupBox1.Controls.Add(this.downButton);
             this.groupBox1.Controls.Add(this.upperButton);
@@ -165,10 +167,118 @@
             this.groupBox1.Controls.Add(this.ekleBttn);
             this.groupBox1.Location = new System.Drawing.Point(12, 39);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(107, 402);
+            this.groupBox1.Size = new System.Drawing.Size(107, 466);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Fonksiyonlar";
+            // 
+            // ekleFonkBttn
+            // 
+            this.ekleFonkBttn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.ekleFonkBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.ekleFonkBttn.DisabledForeColor = System.Drawing.Color.Gray;
+            this.ekleFonkBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ekleFonkBttn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.ekleFonkBttn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.ekleFonkBttn.HoverTextColor = System.Drawing.Color.White;
+            this.ekleFonkBttn.IsDerivedStyle = true;
+            this.ekleFonkBttn.Location = new System.Drawing.Point(15, 59);
+            this.ekleFonkBttn.Name = "ekleFonkBttn";
+            this.ekleFonkBttn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.ekleFonkBttn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.ekleFonkBttn.NormalTextColor = System.Drawing.Color.White;
+            this.ekleFonkBttn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.ekleFonkBttn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.ekleFonkBttn.PressTextColor = System.Drawing.Color.White;
+            this.ekleFonkBttn.Size = new System.Drawing.Size(75, 23);
+            this.ekleFonkBttn.Style = MetroSet_UI.Enums.Style.Light;
+            this.ekleFonkBttn.StyleManager = null;
+            this.ekleFonkBttn.TabIndex = 3;
+            this.ekleFonkBttn.Text = "Ekle";
+            this.ekleFonkBttn.ThemeAuthor = "Narwin";
+            this.ekleFonkBttn.ThemeName = "MetroLite";
+            this.ekleFonkBttn.Click += new System.EventHandler(this.ekleFonkBttn_Click);
+            // 
+            // downButton
+            // 
+            this.downButton.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.downButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.downButton.DisabledForeColor = System.Drawing.Color.Gray;
+            this.downButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.downButton.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.downButton.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.downButton.HoverTextColor = System.Drawing.Color.White;
+            this.downButton.IsDerivedStyle = true;
+            this.downButton.Location = new System.Drawing.Point(15, 417);
+            this.downButton.Name = "downButton";
+            this.downButton.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.downButton.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.downButton.NormalTextColor = System.Drawing.Color.White;
+            this.downButton.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.downButton.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.downButton.PressTextColor = System.Drawing.Color.White;
+            this.downButton.Size = new System.Drawing.Size(75, 43);
+            this.downButton.Style = MetroSet_UI.Enums.Style.Light;
+            this.downButton.StyleManager = null;
+            this.downButton.TabIndex = 2;
+            this.downButton.Text = "Aşağıya İndir";
+            this.downButton.ThemeAuthor = "Narwin";
+            this.downButton.ThemeName = "MetroLite";
+            this.downButton.Click += new System.EventHandler(this.downButton_Click);
+            // 
+            // upperButton
+            // 
+            this.upperButton.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.upperButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.upperButton.DisabledForeColor = System.Drawing.Color.Gray;
+            this.upperButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.upperButton.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.upperButton.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.upperButton.HoverTextColor = System.Drawing.Color.White;
+            this.upperButton.IsDerivedStyle = true;
+            this.upperButton.Location = new System.Drawing.Point(15, 368);
+            this.upperButton.Name = "upperButton";
+            this.upperButton.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.upperButton.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.upperButton.NormalTextColor = System.Drawing.Color.White;
+            this.upperButton.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.upperButton.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.upperButton.PressTextColor = System.Drawing.Color.White;
+            this.upperButton.Size = new System.Drawing.Size(75, 43);
+            this.upperButton.Style = MetroSet_UI.Enums.Style.Light;
+            this.upperButton.StyleManager = null;
+            this.upperButton.TabIndex = 2;
+            this.upperButton.Text = "Yukarı Çıkar";
+            this.upperButton.ThemeAuthor = "Narwin";
+            this.upperButton.ThemeName = "MetroLite";
+            this.upperButton.Click += new System.EventHandler(this.upperButton_Click);
+            // 
+            // silBtn
+            // 
+            this.silBtn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.silBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.silBtn.DisabledForeColor = System.Drawing.Color.Gray;
+            this.silBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.silBtn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.silBtn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.silBtn.HoverTextColor = System.Drawing.Color.White;
+            this.silBtn.IsDerivedStyle = true;
+            this.silBtn.Location = new System.Drawing.Point(15, 88);
+            this.silBtn.Name = "silBtn";
+            this.silBtn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.silBtn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.silBtn.NormalTextColor = System.Drawing.Color.White;
+            this.silBtn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.silBtn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.silBtn.PressTextColor = System.Drawing.Color.White;
+            this.silBtn.Size = new System.Drawing.Size(75, 23);
+            this.silBtn.Style = MetroSet_UI.Enums.Style.Light;
+            this.silBtn.StyleManager = null;
+            this.silBtn.TabIndex = 1;
+            this.silBtn.Text = "Sil";
+            this.silBtn.ThemeAuthor = "Narwin";
+            this.silBtn.ThemeName = "MetroLite";
+            this.silBtn.Click += new System.EventHandler(this.silBtn_Click);
             // 
             // ekleBttn
             // 
@@ -199,124 +309,45 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(125, 69);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(572, 372);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(769, 436);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
-            // silBtn
+            // excelAktarBttn
             // 
-            this.silBtn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.silBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.silBtn.DisabledForeColor = System.Drawing.Color.Gray;
-            this.silBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.silBtn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.silBtn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.silBtn.HoverTextColor = System.Drawing.Color.White;
-            this.silBtn.IsDerivedStyle = true;
-            this.silBtn.Location = new System.Drawing.Point(15, 88);
-            this.silBtn.Name = "silBtn";
-            this.silBtn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.silBtn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.silBtn.NormalTextColor = System.Drawing.Color.White;
-            this.silBtn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.silBtn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.silBtn.PressTextColor = System.Drawing.Color.White;
-            this.silBtn.Size = new System.Drawing.Size(75, 23);
-            this.silBtn.Style = MetroSet_UI.Enums.Style.Light;
-            this.silBtn.StyleManager = null;
-            this.silBtn.TabIndex = 1;
-            this.silBtn.Text = "Sil";
-            this.silBtn.ThemeAuthor = "Narwin";
-            this.silBtn.ThemeName = "MetroLite";
-            this.silBtn.Click += new System.EventHandler(this.silBtn_Click);
-            // 
-            // upperButton
-            // 
-            this.upperButton.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.upperButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.upperButton.DisabledForeColor = System.Drawing.Color.Gray;
-            this.upperButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.upperButton.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.upperButton.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.upperButton.HoverTextColor = System.Drawing.Color.White;
-            this.upperButton.IsDerivedStyle = true;
-            this.upperButton.Location = new System.Drawing.Point(15, 305);
-            this.upperButton.Name = "upperButton";
-            this.upperButton.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.upperButton.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.upperButton.NormalTextColor = System.Drawing.Color.White;
-            this.upperButton.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.upperButton.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.upperButton.PressTextColor = System.Drawing.Color.White;
-            this.upperButton.Size = new System.Drawing.Size(75, 43);
-            this.upperButton.Style = MetroSet_UI.Enums.Style.Light;
-            this.upperButton.StyleManager = null;
-            this.upperButton.TabIndex = 2;
-            this.upperButton.Text = "Yukarı Çıkar";
-            this.upperButton.ThemeAuthor = "Narwin";
-            this.upperButton.ThemeName = "MetroLite";
-            this.upperButton.Click += new System.EventHandler(this.upperButton_Click);
-            // 
-            // downButton
-            // 
-            this.downButton.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.downButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.downButton.DisabledForeColor = System.Drawing.Color.Gray;
-            this.downButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.downButton.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.downButton.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.downButton.HoverTextColor = System.Drawing.Color.White;
-            this.downButton.IsDerivedStyle = true;
-            this.downButton.Location = new System.Drawing.Point(15, 354);
-            this.downButton.Name = "downButton";
-            this.downButton.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.downButton.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.downButton.NormalTextColor = System.Drawing.Color.White;
-            this.downButton.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.downButton.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.downButton.PressTextColor = System.Drawing.Color.White;
-            this.downButton.Size = new System.Drawing.Size(75, 43);
-            this.downButton.Style = MetroSet_UI.Enums.Style.Light;
-            this.downButton.StyleManager = null;
-            this.downButton.TabIndex = 2;
-            this.downButton.Text = "Aşağıya İndir";
-            this.downButton.ThemeAuthor = "Narwin";
-            this.downButton.ThemeName = "MetroLite";
-            this.downButton.Click += new System.EventHandler(this.downButton_Click);
-            // 
-            // ekleFonkBttn
-            // 
-            this.ekleFonkBttn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.ekleFonkBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.ekleFonkBttn.DisabledForeColor = System.Drawing.Color.Gray;
-            this.ekleFonkBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ekleFonkBttn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.ekleFonkBttn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.ekleFonkBttn.HoverTextColor = System.Drawing.Color.White;
-            this.ekleFonkBttn.IsDerivedStyle = true;
-            this.ekleFonkBttn.Location = new System.Drawing.Point(15, 59);
-            this.ekleFonkBttn.Name = "ekleFonkBttn";
-            this.ekleFonkBttn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.ekleFonkBttn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.ekleFonkBttn.NormalTextColor = System.Drawing.Color.White;
-            this.ekleFonkBttn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.ekleFonkBttn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
-            this.ekleFonkBttn.PressTextColor = System.Drawing.Color.White;
-            this.ekleFonkBttn.Size = new System.Drawing.Size(75, 23);
-            this.ekleFonkBttn.Style = MetroSet_UI.Enums.Style.Light;
-            this.ekleFonkBttn.StyleManager = null;
-            this.ekleFonkBttn.TabIndex = 3;
-            this.ekleFonkBttn.Text = "Ekle";
-            this.ekleFonkBttn.ThemeAuthor = "Narwin";
-            this.ekleFonkBttn.ThemeName = "MetroLite";
+            this.excelAktarBttn.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.excelAktarBttn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.excelAktarBttn.DisabledForeColor = System.Drawing.Color.Gray;
+            this.excelAktarBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.excelAktarBttn.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.excelAktarBttn.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
+            this.excelAktarBttn.HoverTextColor = System.Drawing.Color.White;
+            this.excelAktarBttn.IsDerivedStyle = true;
+            this.excelAktarBttn.Location = new System.Drawing.Point(15, 161);
+            this.excelAktarBttn.Name = "excelAktarBttn";
+            this.excelAktarBttn.NormalBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.excelAktarBttn.NormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.excelAktarBttn.NormalTextColor = System.Drawing.Color.White;
+            this.excelAktarBttn.PressBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.excelAktarBttn.PressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(147)))), ((int)(((byte)(195)))));
+            this.excelAktarBttn.PressTextColor = System.Drawing.Color.White;
+            this.excelAktarBttn.Size = new System.Drawing.Size(75, 23);
+            this.excelAktarBttn.Style = MetroSet_UI.Enums.Style.Light;
+            this.excelAktarBttn.StyleManager = null;
+            this.excelAktarBttn.TabIndex = 4;
+            this.excelAktarBttn.Text = "Excel Aktar";
+            this.excelAktarBttn.ThemeAuthor = "Narwin";
+            this.excelAktarBttn.ThemeName = "MetroLite";
+            this.excelAktarBttn.Click += new System.EventHandler(this.excelAktarBttn_Click);
             // 
             // ExcelFonksiyon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(702, 444);
+            this.ClientSize = new System.Drawing.Size(906, 517);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cikBttn);
@@ -347,10 +378,11 @@
         private MetroSet_UI.Controls.MetroSetButton cikBttn;
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroSet_UI.Controls.MetroSetButton ekleBttn;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private MetroSet_UI.Controls.MetroSetButton silBtn;
         private MetroSet_UI.Controls.MetroSetButton ekleFonkBttn;
         private MetroSet_UI.Controls.MetroSetButton downButton;
         private MetroSet_UI.Controls.MetroSetButton upperButton;
+        internal System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private MetroSet_UI.Controls.MetroSetButton excelAktarBttn;
     }
 }
